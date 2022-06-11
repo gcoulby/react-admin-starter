@@ -1,18 +1,16 @@
 import React, { Component } from "react";
 import NavMenu from "./nav_menu";
 
-class Sidebar extends Component {
-  render() {
+function SideBar() {
     return (
-      <React.Fragment>
-        <div className="sidebar-wrapper print-hide">
-          <nav id="sidebar" className="print-hide">
-            <NavMenu />
-          </nav>
-        </div>
-      </React.Fragment>
+        <>
+            <div className="sidebar-wrapper print-hide">
+                <nav id="sidebar" className="print-hide">
+                    <NavMenu />
+                </nav>
+            </div>
+        </>
     );
-  }
 }
 
-export default Sidebar;
+export default SideBar;
